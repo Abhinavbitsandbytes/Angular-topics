@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,6 +17,8 @@ import { FilterPipeCompComponent } from './pipes/filter-pipe-comp/filter-pipe-co
 import { FilterPipe } from './filter.pipe';
 import { ImpurePipeCompComponent } from './pipes/impure-pipe-comp/impure-pipe-comp.component';
 import { FormCompComponent } from './form/form-comp/form-comp.component';
+import { ConcatMapComponent } from './Rxjs/concat-map/concat-map.component';
+import { ForkJoinComponent } from './Rxjs/fork-join/fork-join.component';
 
 @NgModule({
   declarations: [
@@ -31,13 +34,16 @@ import { FormCompComponent } from './form/form-comp/form-comp.component';
     FilterPipeCompComponent,
     FilterPipe,
     ImpurePipeCompComponent,
-    FormCompComponent
+    FormCompComponent,
+    ConcatMapComponent,
+    ForkJoinComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
 
   ],
   providers: [],

@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ParentComponent implements OnInit {
 
-  parentData = 1;
+  parentData = "data from parent";
    count=6;
    parentData2 = {
     name: 'abhi',

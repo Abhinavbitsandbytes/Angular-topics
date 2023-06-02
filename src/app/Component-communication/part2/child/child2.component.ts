@@ -5,16 +5,11 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./child2.component.css']
 })
 export class Child2Component implements OnInit {
-
   @Output() messageEvent = new EventEmitter()
-
   message="Hello"
-
   constructor() { }
-
   ngOnInit(): void {
   }
-
   handleClick(){
     this.messageEvent.emit(this.message)
   }
