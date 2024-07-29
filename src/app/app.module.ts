@@ -19,6 +19,8 @@ import { ImpurePipeCompComponent } from './pipes/impure-pipe-comp/impure-pipe-co
 import { FormCompComponent } from './form/form-comp/form-comp.component';
 import { ConcatMapComponent } from './Rxjs/concat-map/concat-map.component';
 import { ForkJoinComponent } from './Rxjs/fork-join/fork-join.component';
+import { GridComponent } from './grid/grid.component';
+import { FormArrayComponent } from './form-array/form-array.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { ForkJoinComponent } from './Rxjs/fork-join/fork-join.component';
     ImpurePipeCompComponent,
     FormCompComponent,
     ConcatMapComponent,
-    ForkJoinComponent
+    ForkJoinComponent,
+    GridComponent,
+    FormArrayComponent
   ],
   imports: [
     BrowserModule,

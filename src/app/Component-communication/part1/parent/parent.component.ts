@@ -21,7 +21,6 @@ export class ParentComponent implements OnInit {
   ngOnInit(): void {
     setInterval(() => {
       this.parentData2.address.pin=6
-
 })
 }
 }

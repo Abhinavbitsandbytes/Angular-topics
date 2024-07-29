@@ -16,5 +16,5 @@ export class ForkJoinComponent implements OnInit {
       console.log(data)
     })
   }
-
 }
+

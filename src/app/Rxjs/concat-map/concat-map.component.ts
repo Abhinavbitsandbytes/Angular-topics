@@ -15,7 +15,6 @@ export class ConcatMapComponent implements OnInit {
   }
 
   // first data1 api will get called after its success data2 will get called after its success data3. order matters
-
   testConcatMap(){
     this.appServiceService.data1().pipe(
       tap(res => {
