@@ -23,6 +23,8 @@ import { ForkJoinComponent } from './Rxjs/fork-join/fork-join.component';
 import { TempComponent } from './temp/temp.component';
 import { SubjectComponent } from './subject/subject/subject.component';
 import { Subject2Component } from './subject/subject2/subject2.component';
+import { GridComponent } from './grid/grid.component';
+import { FormArrayComponent } from './form-array/form-array.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +45,9 @@ import { Subject2Component } from './subject/subject2/subject2.component';
     ForkJoinComponent,
     TempComponent,
     SubjectComponent,
-    Subject2Component
+    Subject2Component,
+    GridComponent,
+    FormArrayComponent
   ],
   imports: [
     BrowserModule,
