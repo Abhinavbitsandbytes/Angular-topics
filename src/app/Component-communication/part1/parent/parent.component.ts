@@ -7,21 +7,19 @@ import { Component, OnInit } from '@angular/core';
 export class ParentComponent implements OnInit {
 
   parentData = "data from parent";
-   count=6;
-   parentData2 = {
+  count = 6;
+  parentData2 = {
     name: 'abhi',
-    address : {
+    address: {
       city: 'delhi',
       pin: 1
     }
-   }
+  }
 
   constructor() { }
-
   ngOnInit(): void {
     setInterval(() => {
-      this.parentData2.address.pin=6
-
-})
-}
+      this.parentData2.address.pin = 6
+    })
+  }
 }

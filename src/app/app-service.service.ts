@@ -16,7 +16,7 @@ export class AppServiceService {
   }
   data2() {
     
-      return this.http.get<any>('https://ijsonplaceholder.typicode.com/posts/2');
+      return this.http.get<any>('https://jsonplaceholder.typicode.com/posts/2');
 
   }
   data3() {

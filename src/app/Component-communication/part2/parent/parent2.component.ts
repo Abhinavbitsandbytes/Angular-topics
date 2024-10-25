@@ -9,7 +9,7 @@ export class Parent2Component implements OnInit {
   constructor() { }
   ngOnInit(): void {
   }
-  messageFromParent(item: any){
+  messageFromChildFun(item: any){
     this.messageFromChild=item + Math.random()
   }
 }

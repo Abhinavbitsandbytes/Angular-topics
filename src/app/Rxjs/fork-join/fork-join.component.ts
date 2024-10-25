@@ -7,14 +7,12 @@ import { AppServiceService } from '../../app-service.service'
   styleUrls: ['./fork-join.component.css']
 })
 export class ForkJoinComponent implements OnInit {
-
   constructor(private readonly appServiceService: AppServiceService) { }
-
   ngOnInit(): void {
-    forkJoin([this.appServiceService.data1(), this.appServiceService.data2(), this.appServiceService.data3()])
+    forkJoin([this.appServiceService.data1(), this.appServiceService.data2(),
+       this.appServiceService.data3()])
     .subscribe((data: any)=>{
       console.log(data)
     })
   }
-
 }

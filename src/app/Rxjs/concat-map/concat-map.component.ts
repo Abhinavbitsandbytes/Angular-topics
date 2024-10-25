@@ -7,15 +7,12 @@ import { AppServiceService } from '../../app-service.service'
   styleUrls: ['./concat-map.component.css']
 })
 export class ConcatMapComponent implements OnInit {
-
   constructor(private readonly appServiceService: AppServiceService) { }
-
   ngOnInit(): void {
     this.testConcatMap()
   }
-
-  // first data1 api will get called after its success data2 will get called after its success data3. order matters
-
+  // first data1 api will get called after its success data2 will get called
+  // after its success data3. order matters
   testConcatMap(){
     this.appServiceService.data1().pipe(
       tap(res => {
@@ -29,5 +26,4 @@ export class ConcatMapComponent implements OnInit {
       console.log('final res', res)
     })
   }
-
 }
