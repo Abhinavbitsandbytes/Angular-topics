@@ -25,6 +25,12 @@ import { SubjectComponent } from './subject/subject/subject.component';
 import { Subject2Component } from './subject/subject2/subject2.component';
 import { GridComponent } from './grid/grid.component';
 import { FormArrayComponent } from './form-array/form-array.component';
+import { TrackbyComponent } from './trackby/trackby.component';
+import { TypeaheadComponent } from './typeahead/typeahead.component';
+import { StopwatchComponent } from './stopwatch/stopwatch.component';
+import { SiblingOneComponent } from './Component-communication/part4/sibling-one/sibling-one.component';
+import { SiblingTwoComponent } from './Component-communication/part4/sibling-two/sibling-two.component';
+import { Parent4Component } from './Component-communication/part4/parent4/parent4.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +53,13 @@ import { FormArrayComponent } from './form-array/form-array.component';
     SubjectComponent,
     Subject2Component,
     GridComponent,
-    FormArrayComponent
+    FormArrayComponent,
+    TrackbyComponent,
+    TypeaheadComponent,
+    StopwatchComponent,
+    SiblingOneComponent,
+    SiblingTwoComponent,
+    Parent4Component
   ],
   imports: [
     BrowserModule,
